@@ -5,11 +5,13 @@ import java.awt.event.ActionListener;
 
 public class Login {
     //todo login deatails
+
+
     public static void showLoginScreen() {
         JFrame loginFrame = new JFrame("Login");
         loginFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         loginFrame.setSize(300, 150);
-        loginFrame.setLayout(new GridLayout(3, 2));
+        loginFrame.setLayout(new GridLayout(5, 2));
 
         JTextField usernameField = new JTextField();
         JPasswordField passwordField = new JPasswordField();
@@ -45,6 +47,6 @@ public class Login {
     private static boolean isValidLogin(String username, String password) {
         // Replace this with your actual login validation logic
         // For simplicity, a hardcoded username and password are used here.
-        return username.equals("admin") && password.equals("password");
+        return username.equals("abc") && password.equals("123");
     }
 }

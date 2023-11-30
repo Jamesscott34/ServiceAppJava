@@ -13,6 +13,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Report {
+
     public static void showReportForm() {
         JFrame reportFrame = new JFrame("Report Form");
         reportFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

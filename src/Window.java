@@ -38,14 +38,13 @@ public class Window {
         reportButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                showReportForm();
             }
         });
 
         pestButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                showPestScreen();
+                pestWindow.showPestScreen();
             }
         });
 

@@ -1,14 +1,10 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Scanner;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -56,7 +52,7 @@ public class pestWindow {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         // When "Rats" button is clicked, display the content of "rats.txt" on a new screen.
-                        displayTextFile("C:\\Users\\35387\\Desktop\\java\\ServiceApp\\ServiceApp\\Rats.txt");
+                        displayTextFile("../Res/Information/Rodents/Rats.txt");
                     }
                 });
 
@@ -64,7 +60,7 @@ public class pestWindow {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         // When "Mice" button is clicked, display the content of "mice.txt" on a new screen.
-                        displayTextFile("C:\\Users\\35387\\Desktop\\java\\ServiceApp\\ServiceApp\\Mats.txt");
+                        displayTextFile("C:\\Users\\35387\\Desktop\\java\\ServiceApp\\ServiceApp\\Mice.txt");
                     }
                 });
 
