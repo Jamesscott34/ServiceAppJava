@@ -2,54 +2,60 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyAdapter;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Scanner;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
 
 public class Window {
+    private static JFrame currentFrame;
+
     public static void showMainScreen() {
-        JFrame frame = new JFrame("Main Screen");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 200);
-        frame.setLayout(new FlowLayout());
+        currentFrame = new JFrame("Main Screen");
+        currentFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        currentFrame.setSize(400, 200);
+        currentFrame.setLayout(new FlowLayout());
 
         JButton contractButton = new JButton("Contract");
         JButton reportButton = new JButton("Reports");
+        JButton mapButton = new JButton("Map");
         JButton pestButton = new JButton("Pest");
+        JButton emailButton = new JButton("Email");
 
-        frame.add(contractButton);
-        frame.add(reportButton);
-        frame.add(pestButton);
+        currentFrame.add(contractButton);
+        currentFrame.add(reportButton);
+        currentFrame.add(mapButton);
+        currentFrame.add(pestButton);
+        currentFrame.add(emailButton);
 
-        contractButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                // Add contract functionality here
-            }
-        });
+        contractButton.addActionListener(e -> openContractWindow());
+        reportButton.addActionListener(e -> openReportWindow());
+        mapButton.addActionListener(e -> openMapWindow());
+        pestButton.addActionListener(e -> openPestWindow());
+        emailButton.addActionListener(e -> openEmailWindow());
 
-        reportButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Report.showReportForm();
-            }
-        });
-
-        pestButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                pestWindow.showPestScreen();
-            }
-        });
-
-        frame.setVisible(true);
+        currentFrame.setVisible(true);
     }
-    // todo add main window with buttons for map reports Pests
+
+    private static void openContractWindow() {
+        currentFrame.dispose();
+        contracts.createContractWindow();
+    }
+
+    private static void openReportWindow() {
+        currentFrame.dispose();
+        Report.showReportForm();
+    }
+
+    private static void openMapWindow() {
+        currentFrame.dispose();
+        Maps.showMapScreen();
+    }
+
+    private static void openPestWindow() {
+        currentFrame.dispose();
+        pestWindow.showPestScreen();
+    }
+
+    private static void openEmailWindow() {
+        currentFrame.dispose();
+        Email.showEmailScreen();
+    }
+
 }
