@@ -38,6 +38,7 @@ public class Window {
         reportButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                Report.showReportForm();
             }
         });
 
