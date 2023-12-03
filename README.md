@@ -3,15 +3,26 @@
 # Management System
 
 This is a simple contract management system written in Java using Swing for the user interface. It allows users to log in, create contracts, and view a main window with various functionalities.
+it also has a widget for pest information 
+// to be updated 
 
 # Features
 
-Login Screen: Allows users to log in as admin or regular users.
-Signup Screen: New users can sign up for an account.
-Main Window: Provides access to contract creation, reports, maps, pest control, and email functionalities.
-Contracts Creation: Enables users to create contracts by entering details like account name, address, contact information, site name, visits per year, and price per quarter.
-Save Contracts: Contracts are saved as text files in a folder named "contracts" with each file named after the site name.
-How to Use
+Login Screen: 
+Allows users to log in as admin or regular users.
+
+Signup Screen:
+New users can sign up for an account.
+
+Main Window: 
+Provides access to contract creation, reports, maps, pest control, and email functionalities.
+
+Contracts Creation: 
+Enables users to create contracts by entering details like account name, address, contact information, site name, visits per year, and price per quarter.
+
+Save Contracts: 
+Contracts are saved as text files in a folder named "contracts" with each file named after the site name.
+
 
 # Running the Application:
 
