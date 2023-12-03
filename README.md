@@ -1,8 +1,10 @@
 # ServiceAppContract
 Management System
+
 This is a simple contract management system written in Java using Swing for the user interface. It allows users to log in, create contracts, and view a main window with various functionalities.
 
 Features
+
 Login Screen: Allows users to log in as admin or regular users.
 Signup Screen: New users can sign up for an account.
 Main Window: Provides access to contract creation, reports, maps, pest control, and email functionalities.
@@ -18,7 +20,9 @@ Login:
 Use the provided username and password to log in as an admin or a regular user.
 Main Window:
 
-After logging in, the main window provides access to different functionalities:
+After logging in, 
+
+the main window provides access to different functionalities:
 Contract Creation: Click the "Contracts" button to create new contracts.
 Reports: Provides reporting functionalities.
 Maps: Opens a map view.
